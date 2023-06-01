@@ -1,0 +1,161 @@
+
+.Unifortes{
+  color: rgb(52, 6, 255);
+}
+
+.Unifortes:hover {
+  color: #04BF8A;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(imagen_unifortes.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.banner {
+  background: url(imagen_unifortes.png) center/cover;
+  text-align: left;
+  padding: 80px 80px;
+  margin-top: 50px;
+}
+
+header {
+  background: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 10px;
+  
+}
+
+
+.navigation-links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-links a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+.search-bar input[type="text"] {
+  margin-right: 5px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+
+.search-bar button {
+  background-color: #508ac9;
+  border: none;
+  padding: 1px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-bar button:hover {
+  background-color: #04BF8A;
+}
+
+
+.link {
+  font-size: 18px;
+}
+
+
+.title {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+  
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #fff;
+  
+}
+
+.link:hover {
+  color: #04BF8A;
+}
+
+.title:hover{
+  color:#04BF8A;
+}
+
+.subtitle:hover{
+  color:#04BF8A;
+}
+
+
+
+footer {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-content div {
+  text-align: center;
+  color: #000;
+  height: 160%;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+
+.footer-content i {
+  font-size: 40px; 
+    color: #04BF8A; 
+  margin-bottom: 10px; 
+}
+
+
+.footer-content p {
+  margin: 0; 
+}
+
+
