@@ -3,8 +3,129 @@
     --azul-secundario:  #0511F2;
     --cinza-texto: #575757;
     --branco: #fff;
+    --cinza-claro: #B6B4B4;
+    --verde-agua: #04BF8A;
 }
 
-body{
+*{
+    margin:0;
+    padding:0;
     font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+/*barra de navegação*/
+nav{
+    display: flex;
+    align-items: center; /*vertical*/
+    height: 50px;
+    background-color: var(--azul-principal);
+
+}
+.ul-links-navegacao{
+    list-style-type: none;
+}
+nav li{
+    display: inline;
+    padding: 20px;
+}
+nav a{
+    text-decoration: none;
+    color:var(--branco);
+}
+#lado-direito-barra-navegacao{
+    display: flex;
+    align-items: center; /*vertical*/ 
+    margin-left: auto; 
+    margin-right: 0;    
+}
+#lado-direito-barra-navegacao > *{
+    margin: 20px;
+}
+#pesquisa{
+    display: flex;
+    padding: 5px;
+    align-items: center; /*vertical*/
+    justify-content: space-between;
+    background-color: var(--branco);
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;
+    color: var(--cinza-claro)
+}
+.fa-magnifying-glass{
+    color: var(--cinza-texto);
+}
+#foto-usuario{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.fa-bell{
+    color: var(--branco);
+}
+#container{
+    display: flex;
+}
+
+/*menu lateral*/
+#menu-lateral{
+    border: solid var(--cinza-claro) 0.5px;
+    margin-left: 0; 
+    margin-right: auto;
+}
+#menu-lateral li{
+    color: var(--cinza-texto);
+    padding: 10px;
+}
+#titulo-menu-lateral{
+    font-weight: bold;
+}
+#dados-jogo{
+    display: flex;
+}
+.retangulo-externo{
+    display: flex;
+    color: var(--branco);
+    align-items: center;
+    background-color: var(--azul-secundario);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+}
+.retangulo-externo .fa-solid{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.retangulo-interno{
+    background-color: var(--branco) ;
+    padding: 3px;
+    border-radius: 10px;
+    width: 100px;
+    color: var(--cinza-texto);
+    text-align: center;
+}
+/*seção dos produtos*/
+#container-direito{
+    display: flex;
+    flex-direction: column;
+}
+#secao-produtos{
+    justify-content center;
+    display:grid;
+    grid-template-columns: 248px 248px 248px;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.produto{
+    width: 248px;
+    height: 271px;
+    box-shadow: 5px 5px 10px var(--cinza-claro);
+    border-radius: 20px;
+}
+.produto img{
+    width: 40px;
+    height: 40px;
 }
