@@ -52,7 +52,8 @@ nav a{
     width: 400px;
     height: 20px;
     border-radius: 20px;
-    color: var(--cinza-claro)
+    color: var(--cinza-claro);
+    cursor: pointer; 
 }
 .fa-magnifying-glass{
     color: var(--cinza-texto);
@@ -65,6 +66,7 @@ nav a{
 }
 .fa-bell{
     color: var(--branco);
+    cursor: pointer; 
 }
 #container{
     width: 100vw;
@@ -74,6 +76,7 @@ nav a{
 /*menu lateral*/
 #menu-lateral{
     width: 20%;
+    height: 100vh;
     border: solid var(--cinza-claro) 0.5px;
     margin-left: 0; 
     margin-right: auto;
@@ -81,6 +84,7 @@ nav a{
 #menu-lateral li{
     color: var(--cinza-texto);
     padding: 10px;
+    cursor: pointer; 
 }
 #titulo-menu-lateral{
     font-weight: bold;
@@ -136,6 +140,7 @@ nav a{
 }
 .produto > *{
     margin: 10px;
+    cursor: pointer; 
 }
 .produto img{
     width: 177px;
@@ -154,4 +159,71 @@ nav a{
     font-weight:bold;
     border: none;
     background-color: var(--branco);
+    cursor: pointer; 
+}
+/*Confirmar pedido*/
+#confirmar-pedido{
+    margin-top: auto;
+    margin-bottom: 0;
+    height: 150px;
+    border: solid var(--cinza-claro) 0.5px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 250px 200px 200px 200px;
+    font-size: 12px;
+    color: var(--cinza-texto);
+}
+.secao-confirmar-pedido{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.informacao-secao-confirmar-pedido{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 5px;
+}
+#nome-produto-confirmar-pedido, #valor-produto-confirmar-pedido{
+    font-weight: bold;
+}
+#valor-produto-confirmar-pedido{
+    margin-bottom: 20px;
+}
+.titulo-secao-confirmar-pedido{
+    color: var(--cinza-claro);
+}
+.secao-confirmar-pedido img{
+    width: 91px;
+    height: 55px;
+}
+#btn-confirmar-pedido{
+    border-radius: 20px;
+    background-color: var(--azul-secundario);
+    color: var(--branco);
+    padding: 10px;
+    width: 150px;
+    border: none;
+    margin: auto;
+    cursor: pointer; 
+}
+#formulario-quantidade{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#btn-minus-item-cart, #btn-add-item-cart{
+    border-radius: 10px;
+    background-color: var(--azul-secundario);
+    color: var(--branco);
+    padding: 10px 20px;
+    width: 30px;
+    border: none;
+    display: flex;
+    justify-content:center;
+    margin: 0px 10px;
+    cursor: pointer; 
 }
