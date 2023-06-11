@@ -1,0 +1,10 @@
+:root{
+    --azul-principal: #084F8C;
+    --azul-secundario:  #0511F2;
+    --cinza-texto: #575757;
+    --branco: #fff;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+}
