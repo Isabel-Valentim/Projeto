@@ -1,0 +1,229 @@
+:root{
+    --azul-principal: #084F8C;
+    --azul-secundario:  #0511F2;
+    --cinza-texto: #575757;
+    --branco: #fff;
+    --cinza-claro: #B6B4B4;
+    --verde-agua: #04BF8A;
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Roboto, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+/*barra de navegação*/
+nav{
+    display: flex;
+    align-items: center; /*vertical*/
+    height: 50px;
+    background-color: var(--azul-principal);
+
+}
+.ul-links-navegacao{
+    list-style-type: none;
+}
+nav li{
+    display: inline;
+    padding: 20px;
+}
+nav a{
+    text-decoration: none;
+    color:var(--branco);
+}
+#lado-direito-barra-navegacao{
+    display: flex;
+    align-items: center; /*vertical*/ 
+    margin-left: auto; 
+    margin-right: 0;    
+}
+#lado-direito-barra-navegacao > *{
+    margin: 20px;
+}
+#pesquisa{
+    display: flex;
+    padding: 5px;
+    align-items: center; /*vertical*/
+    justify-content: space-between;
+    background-color: var(--branco);
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;
+    color: var(--cinza-claro);
+    cursor: pointer; 
+}
+.fa-magnifying-glass{
+    color: var(--cinza-texto);
+}
+#foto-usuario{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.fa-bell{
+    color: var(--branco);
+    cursor: pointer; 
+}
+#container{
+    width: 100vw;
+    display: flex;
+}
+
+/*menu lateral*/
+#menu-lateral{
+    width: 20%;
+    height: 100vh;
+    border: solid var(--cinza-claro) 0.5px;
+    margin-left: 0; 
+    margin-right: auto;
+}
+#menu-lateral li{
+    color: var(--cinza-texto);
+    padding: 10px;
+    cursor: pointer; 
+}
+#titulo-menu-lateral{
+    font-weight: bold;
+}
+#dados-jogo{
+    display: flex;
+}
+.retangulo-externo{
+    display: flex;
+    color: var(--branco);
+    align-items: center;
+    background-color: var(--azul-secundario);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+}
+.retangulo-externo .fa-solid{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.retangulo-interno{
+    background-color: var(--branco) ;
+    padding: 3px;
+    border-radius: 10px;
+    width: 100px;
+    color: var(--cinza-texto);
+    text-align: center;
+}
+/*seção dos produtos*/
+#container-direito{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+#secao-produtos{
+    margin: 40px;
+    justify-content: center;
+    display:grid;
+    grid-template-columns: 248px 248px 248px;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.produto{
+    width: 248px;
+    height: 271px;
+    box-shadow: 5px 5px 10px var(--cinza-claro);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.produto > *{
+    margin: 10px;
+    cursor: pointer; 
+}
+.produto img{
+    width: 177px;
+    height: 108px;
+}
+.nome-produto{
+    color:var(--azul-secundario);
+    font-weight:bold;
+}
+.preco-produto{
+    color:var(--azul-secundario);
+    font-weight:bold;
+}
+.btn-add-cart{
+    color:var(--verde-agua);
+    font-weight:bold;
+    border: none;
+    background-color: var(--branco);
+    cursor: pointer; 
+}
+/*Confirmar pedido*/
+#confirmar-pedido{
+    margin-top: auto;
+    margin-bottom: 0;
+    height: 150px;
+    border: solid var(--cinza-claro) 0.5px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 250px 200px 200px 200px;
+    font-size: 12px;
+    color: var(--cinza-texto);
+}
+.secao-confirmar-pedido{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.informacao-secao-confirmar-pedido{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 5px;
+}
+#nome-produto-confirmar-pedido, #valor-produto-confirmar-pedido{
+    font-weight: bold;
+}
+#valor-produto-confirmar-pedido{
+    margin-bottom: 20px;
+}
+.titulo-secao-confirmar-pedido{
+    color: var(--cinza-claro);
+}
+.secao-confirmar-pedido img{
+    width: 91px;
+    height: 55px;
+}
+#btn-confirmar-pedido{
+    border-radius: 20px;
+    background-color: var(--azul-secundario);
+    color: var(--branco);
+    padding: 10px;
+    width: 150px;
+    border: none;
+    margin: auto;
+    cursor: pointer; 
+}
+#formulario-quantidade{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#btn-minus-item-cart, #btn-add-item-cart{
+    border-radius: 10px;
+    background-color: var(--azul-secundario);
+    color: var(--branco);
+    padding: 10px 20px;
+    width: 30px;
+    border: none;
+    display: flex;
+    justify-content:center;
+    margin: 0px 10px;
+    cursor: pointer; 
+}
