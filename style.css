@@ -1,11 +1,18 @@
-
-.Unifortes{
-  color: rgb(52, 6, 255);
+:root{
+  --azul-principal: #084F8C;
+  --azul-secundario:  #0511F2;
+  --cinza-texto: #575757;
+  --branco: #fff;
+  --cinza-claro: #B6B4B4;
+  --verde-agua: #04BF8A;
 }
 
-.Unifortes:hover {
-  color: #04BF8A;
+*{
+  margin:0;
+  padding:0;
+  font-family: Roboto, sans-serif;
 }
+
 
 body {
   margin: 0;
@@ -17,7 +24,7 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;  
   overflow: hidden;
 }
 
@@ -42,23 +49,9 @@ header {
   
 }
 
-
-.navigation-links {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-}
-
-.navigation-links a {
-  margin-left: 10px;
-  text-decoration: none;
-  color: #fff;
-}
-
-
-
 .search-bar input[type="text"] {
   margin-right: 5px;
+  width: 300px;
 }
 
 .search-bar {
@@ -73,7 +66,7 @@ header {
 
 
 .search-bar button {
-  background-color: #508ac9;
+  background-color: var(--azul-principal);
   border: none;
   padding: 1px 15px;
   border-radius: 10px;
@@ -85,6 +78,18 @@ header {
   background-color: #04BF8A;
 }
 
+
+.navigation-links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-links a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+}
 
 .link {
   font-size: 18px;
@@ -108,12 +113,12 @@ header {
   color: #04BF8A;
 }
 
-.title:hover{
-  color:#04BF8A;
+.Unifortes{
+  color:var(--azul-secundario);
 }
 
-.subtitle:hover{
-  color:#04BF8A;
+.Unifortes:hover{
+  color: var(--verde-agua);
 }
 
 
@@ -154,8 +159,19 @@ footer {
 }
 
 
-.footer-content p {
-  margin: 0; 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
